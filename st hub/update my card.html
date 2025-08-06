@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Tech Hub - Software Development & Digital Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Welcome Animation -->
+    <div class="welcome-overlay" id="welcomeOverlay">
+			<div class="modal-icon floating">
+                <i class="fas fa-handshake fa-3x"></i>
+            </div>
+        <div class="welcome-logo">Smart Tech Hub</div>
+		 <div class="profile-container">
+			<div class="profile-img floating">
+				<img src="st.jpeg" alt="Tech Hub Founders" class="hero-img">
+			</div>
+          </div>
+        <div class="welcome-text">Loading Digital Solutions</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+    
+    <!-- Floating Particles Background -->
+    <div class="particles" id="particles"></div>
+    
+    <div class="container">
+        <!-- Language Toggle -->
+        <div class="language-toggle">
+            <button class="language-btn active" data-lang="en">English</button>
+            <button class="language-btn" data-lang="hi">हिंदी</button>
+        </div>
+        
+        <!-- Home Page -->
+        <div class="page active" id="home">
+            <div class="hero">
+               <video autoplay muted loop>
+					<source src="sthub.mp4" type="video/mp4">
+				</video>
+            </div>
+            
+            <div class="profile-section">
+                <div class="profile-container">
+                    <div class="profile-img floating">
+					  <img src="st.jpeg" alt="Tech Hub" class="hero-img ys">
+					</div>
+                </div>
+                <h2 class="owner-name hover-text-effect">Yashwant Sahu & Om Sahu</h2>
+                <p class="owner-title">Founders & Digital Solution Experts</p>
+                
+                <div class="quick-contact">
+                    <a href="tel:+91 7489883965"><i class="fas fa-phone"></i></a>
+                    <a href="https://wa.me/+919111215500"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/smart_tech.hub"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:smarttachhub@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                
+                <!-- Share/Save Buttons -->
+                <div class="action-buttons">
+                    <button class="action-btn share" id="share-btn">
+                        <i class="fas fa-share-alt"></i>
+                        <span class="language-content active" data-lang="en">Share</span>
+                        <span class="language-content" data-lang="hi">शेयर करें</span>
+                    </button>
+                    <button class="action-btn contact" id="contact-save-btn">
+                        <i class="fas fa-address-book"></i>
+                        <span class="language-content active" data-lang="en">Save Contact</span>
+                        <span class="language-content" data-lang="hi">कॉन्टैक्ट सेव करें</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-laptop-code"></i> <span class="language-content active" data-lang="en">About Us</span><span class="language-content" data-lang="hi">हमारे बारे में</span></h2>
+                <p class="about-text language-content active" data-lang="en">
+                    Welcome to Smart Tech Hub, your premier destination for cutting-edge digital solutions. 
+                    We specialize in custom software development, innovative digital visiting cards, and 
+                    captivating graphics & animation services that bring your brand to life.
+                </p>
+                <p class="about-text language-content active" data-lang="en">
+                    Our team combines technical expertise with creative vision to deliver solutions that 
+                    help businesses stand out in the digital world. From concept to execution, we bring 
+                    your ideas to life with precision and style.
+                </p>
+                
+                <p class="about-text language-content" data-lang="hi">
+                    स्मार्ट टेक हब में आपका स्वागत है, जहां आपको कटिंग-एज डिजिटल समाधान मिलते हैं।
+                    हम कस्टम सॉफ्टवेयर डेवलपमेंट, इनोवेटिव डिजिटल विज़िटिंग कार्ड और आकर्षक 
+                    ग्राफिक्स एवं एनीमेशन सेवाओं में विशेषज्ञता रखते हैं जो आपके ब्रांड को जीवंत बनाते हैं।
+                </p>
+                <p class="about-text language-content" data-lang="hi">
+                    हमारी टीम तकनीकी विशेषज्ञता को रचनात्मक दृष्टि के साथ जोड़कर ऐसे समाधान प्रदान करती है 
+                    जो व्यवसायों को डिजिटल दुनिया में अलग खड़ा करते हैं। कॉन्सेप्ट से लेकर एक्जीक्यूशन तक, 
+                    हम आपके विचारों को सटीकता और स्टाइल के साथ जीवंत करते हैं।
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-bullseye"></i> <span class="language-content active" data-lang="en">Our Mission</span><span class="language-content" data-lang="hi">हमारा मिशन</span></h2>
+                <p class="about-text language-content active" data-lang="en">
+                    To empower businesses with innovative digital solutions that enhance their brand presence 
+                    and streamline their operations through cutting-edge technology and creative design.
+                </p>
+                <p class="about-text language-content" data-lang="hi">
+                    व्यवसायों को नवीन डिजिटल समाधानों के साथ सशक्त बनाना जो उनकी ब्रांड उपस्थिति को बढ़ाते हैं 
+                    और अत्याधुनिक तकनीक और रचनात्मक डिजाइन के माध्यम से उनके संचालन को सुव्यवस्थित करते हैं।
+                </p>
+            </div>
+            
+            <!-- Video Section -->
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-video"></i> <span class="language-content active" data-lang="en">Our Showreel</span><span class="language-content" data-lang="hi">हमारा शोरील</span></h2>
+                <div class="video-container">
+                   <video autoplay muted loop>
+						<source src="st4.mp4" type="video/mp4">
+				  </video>
+                </div>
+                <p class="about-text language-content active" data-lang="en">
+                    Watch our showreel to see examples of our work in digital solutions, graphics, and animation.
+                </p>
+                <p class="about-text language-content" data-lang="hi">
+                    डिजिटल समाधान, ग्राफिक्स और एनीमेशन में हमारे काम के उदाहरण देखने के लिए हमारा शोरील देखें।
+                </p>
+            </div>
+        </div>
+        
+        <!-- Services Page -->
+        <div class="page" id="services">
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-laptop-code"></i> <span class="language-content active" data-lang="en">Our Services</span><span class="language-content" data-lang="hi">हमारी सेवाएं</span></h2>
+                <p class="about-text language-content active" data-lang="en">
+                    We offer comprehensive digital solutions tailored to your business needs. 
+                    Our services combine technical excellence with creative innovation.
+                </p>
+                <p class="about-text language-content" data-lang="hi">
+                    हम आपकी व्यावसायिक आवश्यकताओं के अनुरूप व्यापक डिजिटल समाधान प्रदान करते हैं।
+                    हमारी सेवाएं तकनीकी उत्कृष्टता को रचनात्मक नवाचार के साथ जोड़ती हैं।
+                </p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-code"></i></div>
+                        <h3 class="service-name language-content active" data-lang="en">Custom Logo</h3>
+                        <h3 class="service-name language-content" data-lang="hi">कस्टम सॉफ्टवेयर</h3>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-id-card"></i></div>
+                        <h3 class="service-name language-content active" data-lang="en">Digital Cards</h3>
+                        <h3 class="service-name language-content" data-lang="hi">डिजिटल कार्ड</h3>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3 class="service-name language-content active" data-lang="en">Graphic Design</h3>
+                        <h3 class="service-name language-content" data-lang="hi">ग्राफिक डिज़ाइन</h3>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-film"></i></div>
+                        <h3 class="service-name language-content active" data-lang="en">Digital PPT </h3>
+                        <h3 class="service-name language-content" data-lang="hi">डिजिटल पीपीटी</h3>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-globe"></i></div>
+                        <h3 class="service-name language-content active" data-lang="en">Digital Invitation</h3>
+                        <h3 class="service-name language-content" data-lang="hi">डिजिटल निमंत्रण</h3>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
+                        <h3 class="service-name language-content active" data-lang="en">All Templates</h3>
+                        <h3 class="service-name language-content" data-lang="hi">सभी टेम्प्लेट्स</h3>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-video"></i></div>
+                        <h3 class="service-name language-content active" data-lang="en">Video Editing</h3>
+                        <h3 class="service-name language-content" data-lang="hi">वीडियो एडिटिंग</h3>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3 class="service-name language-content active" data-lang="en">Social media content</h3>
+                        <h3 class="service-name language-content" data-lang="hi">सोशल मीडिया कंटेंट</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-star"></i> <span class="language-content active" data-lang="en">Why Choose Us?</span><span class="language-content" data-lang="hi">हमें क्यों चुनें?</span></h2>
+                <div class="about-text">
+                    <p class="language-content active" data-lang="en"><i class="fas fa-check-circle" style="color: var(--success);"></i> <b>Innovative Solutions:</b> Cutting-edge digital products tailored to your needs</p>
+                    <p class="language-content active" data-lang="en"><i class="fas fa-check-circle" style="color: var(--success);"></i> <b>Quick Turnaround:</b> Efficient project delivery without compromising quality</p>
+                    <p class="language-content active" data-lang="en"><i class="fas fa-check-circle" style="color: var(--success);"></i> <b>Affordable Pricing:</b> Competitive rates for premium services</p>
+                    <p class="language-content active" data-lang="en"><i class="fas fa-check-circle" style="color: var(--success);"></i> <b>Client-Centric:</b> Personalized approach to every project</p>
+                    <p class="language-content active" data-lang="en"><i class="fas fa-check-circle" style="color: var(--success);"></i> <b>Animation Experts:</b> Specialized in 2D/3D motion graphics and visual effects</p>
+                    
+                    <p class="language-content" data-lang="hi"><i class="fas fa-check-circle" style="color: var(--success);"></i> <b>नवीन समाधान:</b> आपकी आवश्यकताओं के अनुरूप अत्याधुनिक डिजिटल उत्पाद</p>
+                    <p class="language-content" data-lang="hi"><i class="fas fa-check-circle" style="color: var(--success);"></i> <b>त्वरित वितरण:</b> गुणवत्ता से समझौता किए बिना कुशल परियोजना वितरण</p>
+                    <p class="language-content" data-lang="hi"><i class="fas fa-check-circle" style="color: var(--success);"></i> <b>सस्ती कीमतें:</b> प्रीमियम सेवाओं के लिए प्रतिस्पर्धी दरें</p>
+                    <p class="language-content" data-lang="hi"><i class="fas fa-check-circle" style="color: var(--success);"></i> <b>ग्राहक-केंद्रित:</b> प्रत्येक परियोजना के लिए व्यक्तिगत दृष्टिकोण</p>
+                    <p class="language-content" data-lang="hi"><i class="fas fa-check-circle" style="color: var(--success);"></i> <b>एनीमेशन विशेषज्ञ:</b> 2D/3D मोशन ग्राफिक्स और विजुअल इफेक्ट्स में विशेषज्ञता</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Products Page -->
+        <div class="page" id="products">
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-id-card"></i> <span class="language-content active" data-lang="en">Digital Visiting Cards</span><span class="language-content" data-lang="hi">डिजिटल विज़िटिंग कार्ड</span></h2>
+                <p class="about-text language-content active" data-lang="en">
+                    Revolutionize your networking with our interactive digital visiting cards. 
+                    Share contact details instantly with a tap or scan.
+                </p>
+                <p class="about-text language-content" data-lang="hi">
+                    हमारे इंटरएक्टिव डिजिटल विज़िटिंग कार्ड के साथ अपने नेटवर्किंग को क्रांतिकारी बनाएं।
+                    एक टैप या स्कैन से संपर्क विवरण तुरंत साझा करें।
+                </p>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-badge language-content active" data-lang="en">Popular</div>
+                        <div class="product-badge language-content" data-lang="hi">लोकप्रिय</div>
+                        <div class="product-img-container">
+                            <img src="1.jpg" alt="Classic Digital Card" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title language-content active" data-lang="en">Classic Digital Card</h3>
+                            <h3 class="product-title language-content" data-lang="hi">क्लासिक डिजिटल कार्ड</h3>
+                           
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="2.jpg" alt="Interactive Card" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title language-content active" data-lang="en">Interactive Card</h3>
+                            <h3 class="product-title language-content" data-lang="hi">इंटरएक्टिव कार्ड</h3>
+                          
+                        </div>
+                    </div>
+					 <div class="product-card">
+                        <div class="product-badge language-content active" data-lang="en">New</div>
+                        <div class="product-badge language-content" data-lang="hi">नया</div>
+                        <div class="product-img-container">
+                            <img src="3.jpg" alt="Animated Card" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title language-content active" data-lang="en">Animated Card</h3>
+                            <h3 class="product-title language-content" data-lang="hi">एनिमेटेड कार्ड</h3>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-paint-brush"></i> <span class="language-content active" data-lang="en">Logo Templates</span><span class="language-content" data-lang="hi">लोगो टेम्प्लेट्स</span></h2>
+                <p class="about-text language-content active" data-lang="en">
+                    Choose from our premium collection of logo templates or get a custom design tailored to your brand.
+                </p>
+                <p class="about-text language-content" data-lang="hi">
+                    हमारे प्रीमियम लोगो टेम्प्लेट संग्रह में से चुनें या अपने ब्रांड के लिए अनुकूलित कस्टम डिज़ाइन प्राप्त करें।
+                </p>
+                
+                <div class="logo-templates">
+                    <div class="logo-template">
+                       <img src="log1.jpeg" alt="Logo Template 1" class="logo-template-img">
+                        <h3 class="language-content active" data-lang="en">Minimal Logo</h3>
+                        <h3 class="language-content" data-lang="hi">मिनिमल लोगो</h3>
+                      
+                    </div>
+                    <div class="logo-template">
+                       <img src="logo2.jpeg" alt="Logo Template 2" class="logo-template-img">
+                        <h3 class="language-content active" data-lang="en">Modern Logo</h3>
+                        <h3 class="language-content" data-lang="hi">मॉडर्न लोगो</h3>
+                       
+                    </div>
+                    <div class="logo-template">
+                        <img src="logo3.jpeg" alt="Logo Template 3" class="logo-template-img">
+                        <h3 class="language-content active" data-lang="en">Vintage Logo</h3>
+                        <h3 class="language-content" data-lang="hi">विंटेज लोगो</h3>
+                       
+                    </div>
+                    <div class="logo-template">
+                       <img src="logo4.jpeg" alt="Logo Template 4" class="logo-template-img">
+                        <h3 class="language-content active" data-lang="en">Abstract Logo</h3>
+                        <h3 class="language-content" data-lang="hi">अमूर्त लोगो</h3>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-envelope"></i> <span class="language-content active" data-lang="en">Digital Invitation Cards</span><span class="language-content" data-lang="hi">डिजिटल निमंत्रण कार्ड</span></h2>
+                <p class="about-text language-content active" data-lang="en">
+                    Beautiful digital invitation cards for weddings, birthdays, and corporate events.
+                    Share with guests via link or social media.
+                </p>
+                <p class="about-text language-content" data-lang="hi">
+                    शादियों, जन्मदिनों और कॉर्पोरेट कार्यक्रमों के लिए सुंदर डिजिटल निमंत्रण कार्ड।
+                    लिंक या सोशल मीडिया के माध्यम से मेहमानों के साथ साझा करें।
+                </p>
+                
+                <div class="invitation-cards">
+                    <div class="invitation-card">
+                        <div class="invitation-img-container">
+							<video autoplay muted loop>
+								<source src="ved.mp4" type="video/mp4">
+							</video>                        </div>
+                        <div class="invitation-info">
+                            <h3 class="invitation-title language-content active" data-lang="en">Wedding Invitation</h3>
+                            <h3 class="invitation-title language-content" data-lang="hi">शादी का निमंत्रण</h3>
+                            
+                        </div>
+                    </div>
+                   
+                    <div class="invitation-card">
+                        <div class="invitation-img-container">
+                           <video autoplay muted loop>
+								<source src="ved2.mp4" type="video/mp4">
+							</video> 
+                        </div>
+                        <div class="invitation-info">
+                            <h3 class="invitation-title language-content active" data-lang="en">Corporate Invitation</h3>
+                            <h3 class="invitation-title language-content" data-lang="hi">कॉर्पोरेट निमंत्रण</h3>
+                           
+                        </div>
+                    </div>
+                    <div class="invitation-card">
+                        <div class="invitation-img-container">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Festival Invitation" class="invitation-img">
+                        </div>
+                        <div class="invitation-info">
+                            <h3 class="invitation-title language-content active" data-lang="en">Festival Invitation</h3>
+                            <h3 class="invitation-title language-content" data-lang="hi">त्योहार निमंत्रण</h3>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Page -->
+        <div class="page" id="contact">
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-id-card"></i> <span class="language-content active" data-lang="en">Contact Us</span><span class="language-content" data-lang="hi">संपर्क करें</span></h2>
+                <p class="about-text language-content active" data-lang="en">
+                    Get in touch with our team for your digital solutions. We're here to bring your ideas to life!
+                </p>
+                <p class="about-text language-content" data-lang="hi">
+                    अपने डिजिटल समाधानों के लिए हमारी टीम से संपर्क करें। हम आपके विचारों को जीवंत करने के लिए यहां हैं!
+                </p>
+                
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 class="language-content active" data-lang="en">Call Us</h3>
+                            <h3 class="language-content" data-lang="hi">कॉल करें</h3>
+                            <a href="tel:+917489883965">+91 7489883965 (Yashwant)</a><br>
+                            <a href="tel:+919111215500">+91 9111215500 (Om)</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 class="language-content active" data-lang="en">WhatsApp</h3>
+                            <h3 class="language-content" data-lang="hi">व्हाट्सएप</h3>
+                            <a href="https://wa.me/+919111215500">Chat Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 class="language-content active" data-lang="en">Email</h3>
+                            <h3 class="language-content" data-lang="hi">ईमेल</h3>
+                            <a href="mailto:smarttachhub@gmail.com">smarttachhub@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 class="language-content active" data-lang="en">Instagram</h3>
+                            <h3 class="language-content" data-lang="hi">इंस्टाग्राम</h3>
+                            <a href="https://www.instagram.com/smart_tech.hub">@smart_tech.hub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Share/Save Buttons -->
+                <div class="action-buttons" style="margin-top: 30px;">
+                    <button class="action-btn share" id="share-btn-bottom">
+                        <i class="fas fa-share-alt"></i>
+                        <span class="language-content active" data-lang="en">Share This Page</span>
+                        <span class="language-content" data-lang="hi">इस पेज को शेयर करें</span>
+                    </button>
+                    <button class="action-btn contact" id="contact-save-btn-bottom">
+                        <i class="fas fa-address-book"></i>
+                        <span class="language-content active" data-lang="en">Save Contact</span>
+                        <span class="language-content" data-lang="hi">कॉन्टैक्ट सेव करें</span>
+                    </button>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.581320830324!2d81.9659737!3d21.1927657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28bd001973aeb3%3A0x5bbb4214548b4d4c!2sShubhkamna%20mobile%20shop!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Gallery Page -->
+        <div class="page" id="gallery">
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-images"></i> <span class="language-content active" data-lang="en">Our Portfolio</span><span class="language-content" data-lang="hi">हमारा पोर्टफोलियो</span></h2>
+                <p class="about-text language-content active" data-lang="en">
+                    Explore our recent work and see the quality of our digital solutions.
+                </p>
+                <p class="about-text language-content" data-lang="hi">
+                    हमारे हाल के कार्यों का अन्वेषण करें और हमारे डिजिटल समाधानों की गुणवत्ता देखें।
+                </p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1136&q=80" alt="Digital Card Design" class="gallery-img">
+                        <div class="gallery-caption">
+                            <h3 class="language-content active" data-lang="en">Digital Card Design</h3>
+                            <h3 class="language-content" data-lang="hi">डिजिटल कार्ड डिज़ाइन</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Software Development" class="gallery-img">
+                        <div class="gallery-caption">
+                            <h3 class="language-content active" data-lang="en">Software Development</h3>
+                            <h3 class="language-content" data-lang="hi">सॉफ्टवेयर डेवलपमेंट</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="3D Animation" class="gallery-img">
+                        <div class="gallery-caption">
+                            <h3 class="language-content active" data-lang="en">3D Animation</h3>
+                            <h3 class="language-content" data-lang="hi">3D एनीमेशन</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1531492746076-161ca5d1cbcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80" alt="Graphic Design" class="gallery-img">
+                        <div class="gallery-caption">
+                            <h3 class="language-content active" data-lang="en">Graphic Design</h3>
+                            <h3 class="language-content" data-lang="hi">ग्राफिक डिज़ाइन</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Branding Project" class="gallery-img">
+                        <div class="gallery-caption">
+                            <h3 class="language-content active" data-lang="en">Branding Project</h3>
+                            <h3 class="language-content" data-lang="hi">ब्रांडिंग प्रोजेक्ट</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Web Design" class="gallery-img">
+                        <div class="gallery-caption">
+                            <h3 class="language-content active" data-lang="en">Web Design</h3>
+                            <h3 class="language-content" data-lang="hi">वेब डिज़ाइन</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-trophy"></i> <span class="language-content active" data-lang="en">Featured Projects</span><span class="language-content" data-lang="hi">विशेष प्रोजेक्ट्स</span></h2>
+                
+                <div class="portfolio-item">
+                    <img src="" alt="Business App" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title language-content active" data-lang="en">Business Management App</h3>
+                        <h3 class="portfolio-title language-content" data-lang="hi">व्यवसाय प्रबंधन ऐप</h3>
+                        <p class="portfolio-desc language-content active" data-lang="en">Custom mobile application developed for a local retail chain to manage inventory and sales.</p>
+                        <p class="portfolio-desc language-content" data-lang="hi">इन्वेंट्री और बिक्री प्रबंधित करने के लिए एक स्थानीय खुदरा श्रृंखला के लिए विकसित कस्टम मोबाइल एप्लिकेशन।</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="" alt="3D Animation" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title language-content active" data-lang="en">3D Product Animation</h3>
+                        <h3 class="portfolio-title language-content" data-lang="hi">3D उत्पाद एनीमेशन</h3>
+                        <p class="portfolio-desc language-content active" data-lang="en">High-quality 3D animation showcasing product features for an e-commerce brand.</p>
+                        <p class="portfolio-desc language-content" data-lang="hi">एक ई-कॉमर्स ब्रांड के लिए उत्पाद सुविधाओं को प्रदर्शित करने वाली उच्च गुणवत्ता वाली 3D एनीमेशन।</p>
+                    </div>
+                </div>
+                
+                <!-- Share/Save Buttons -->
+                <div class="action-buttons" style="margin-top: 30px;">
+                    <button class="action-btn share" id="share-btn-gallery">
+                        <i class="fas fa-share-alt"></i>
+                        <span class="language-content active" data-lang="en">Share Our Work</span>
+                        <span class="language-content" data-lang="hi">हमारा काम शेयर करें</span>
+                    </button>
+                    <button class="action-btn contact" id="contact-save-btn-gallery">
+                        <i class="fas fa-address-book"></i>
+                        <span class="language-content active" data-lang="en">Save Contact</span>
+                        <span class="language-content" data-lang="hi">कॉन्टैक्ट सेव करें</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Smart Tech Hub</h3>
+                    <p class="language-content active" data-lang="en">Innovative digital solutions for your business needs.</p>
+                    <p class="language-content" data-lang="hi">आपकी व्यावसायिक आवश्यकताओं के लिए नवीन डिजिटल समाधान।</p>
+                    <div class="footer-social-links">
+                        <a href="https://www.instagram.com/smart_tech.hub"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/+919111215500"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:smarttachhub@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+917489883965"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                
+                
+                <div class="footer-column">
+                    <h3 class="language-content active" data-lang="en">Newsletter</h3>
+                    <h3 class="language-content" data-lang="hi">न्यूज़लेटर</h3>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your Email" class="language-content active" data-lang="en">
+                        <input type="email" placeholder="आपका ईमेल" class="language-content" data-lang="hi">
+                        <button class="language-content active" data-lang="en">Subscribe</button>
+                        <button class="language-content" data-lang="hi">सब्सक्राइब</button>
+                    </div>
+                    <p class="language-content active" data-lang="en">Get updates on our latest products and services.</p>
+                    <p class="language-content" data-lang="hi">हमारे नवीनतम उत्पादों और सेवाओं पर अपडेट प्राप्त करें।</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright language-content active" data-lang="en">
+                    &copy; 2025 Smart Tech Hub. All Rights Reserved.
+                </div>
+                <div class="footer-copyright language-content" data-lang="hi">
+                    &copy; 2025 स्मार्ट टेक हब। सर्वाधिकार सुरक्षित।
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bottom Navigation -->
+    <div class="nav-container">
+        <button class="nav-btn active" data-page="home"><i class="fas fa-home"></i></button>
+        <button class="nav-btn" data-page="services"><i class="fas fa-laptop-code"></i></button>
+        <button class="nav-btn" data-page="products"><i class="fas fa-id-card"></i></button>
+        <button class="nav-btn" data-page="contact"><i class="fas fa-envelope"></i></button>
+        <button class="nav-btn" data-page="gallery"><i class="fas fa-images"></i></button>
+    </div>
+    
+    <script>
+        // Welcome animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const welcomeOverlay = document.getElementById('welcomeOverlay');
+            
+            // Hide welcome overlay after animation completes
+            setTimeout(() => {
+                welcomeOverlay.classList.add('hidden');
+                
+                // Remove from DOM after animation
+                setTimeout(() => {
+                    welcomeOverlay.style.display = 'none';
+                }, 500);
+            }, 3500);
+            
+            // Navigation functionality
+            const navBtns = document.querySelectorAll('.nav-btn');
+            const pages = document.querySelectorAll('.page');
+            
+            navBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons and pages
+                    navBtns.forEach(b => b.classList.remove('active'));
+                    pages.forEach(page => page.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    // Show corresponding page
+                    const pageId = btn.getAttribute('data-page');
+                    document.getElementById(pageId).classList.add('active');
+                    
+                    // Scroll to top
+                    window.scrollTo(0, 0);
+                });
+            });
+            
+            // Simple animation on load
+            setTimeout(() => {
+                document.querySelector('.page.active').style.opacity = 1;
+                document.querySelector('.page.active').style.transform = 'translateY(0)';
+            }, 100);
+            
+            // Create floating particles
+            const particlesContainer = document.getElementById('particles');
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random size between 5px and 15px
+                const size = Math.random() * 10 + 5;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // Random animation duration between 10s and 20s
+                particle.style.animationDuration = `${Math.random() * 10 + 10}s`;
+                
+                // Random delay
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+            
+            // Language toggle functionality
+            const languageBtns = document.querySelectorAll('.language-btn');
+            languageBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all language buttons
+                    languageBtns.forEach(b => b.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    // Get selected language
+                    const lang = btn.getAttribute('data-lang');
+                    
+                    // Hide all language content
+                    document.querySelectorAll('.language-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    // Show content for selected language
+                    document.querySelectorAll(`.language-content[data-lang="${lang}"]`).forEach(content => {
+                        content.classList.add('active');
+                    });
+                });
+            });
+            
+            // Share button functionality
+            const shareBtns = document.querySelectorAll('[id^="share-btn"]');
+            shareBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (navigator.share) {
+                        navigator.share({
+                            title: 'Smart Tech Hub',
+                            text: 'Check out Smart Tech Hub for amazing digital solutions!',
+                            url: window.location.href
+                        }).catch(err => {
+                            console.log('Error sharing:', err);
+                        });
+                    } else {
+                        // Fallback for browsers that don't support Web Share API
+                        const shareUrl = `https://wa.me/?text=Check%20out%20Smart%20Tech%20Hub%20for%20amazing%20digital%20solutions!%20${window.location.href}`;
+                        window.open(shareUrl, '_blank');
+                    }
+                });
+            });
+            
+            // Save contact functionality
+            const contactSaveBtns = document.querySelectorAll('[id^="contact-save-btn"]');
+            contactSaveBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const vcard = `BEGIN:VCARD
+VERSION:3.0
+FN:Smart Tech Hub
+ORG:Smart Tech Hub;
+TEL;TYPE=work,voice:+917489883965
+TEL;TYPE=work,voice:+919111215500
+EMAIL:smarttachhub@gmail.com
+URL:${window.location.href}
+END:VCARD`;
+                    
+                    const blob = new Blob([vcard], { type: 'text/vcard' });
+                    const url = URL.createObjectURL(blob);
+                    
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'smart_tech_hub.vcf';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
